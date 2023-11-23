@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Library</title>
+
+        <link rel="stylesheet" href="style.css">
+        <script defer src="app.js"></script>
+    </head>
+    <body class="page">
+
+        <div class="page__app">
+            <header class="header">
+                <a href="." class="logo">
+                    <span class="logo__text">Library</span>
+                </a>
+
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <button type="button" class="nav__btn nav__btn--search" data-jsx-toggle="modal" data-jsx-target="#searchBook">
+                                <i class="bi bi-search nav__icon"></i>
+                            </button>
+                        </li>
+                        <li class="nav__item">
+                            <button type="button" class="nav__btn" data-jsx-toggle="modal" data-jsx-target="#addBook">
+                                <i class="bi bi-plus-lg nav__icon"></i>
+                            </button>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Sign in</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Sign up</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </header>
+    
+            <main class="main-content content-grid">
+                <section class="library g">
+                    <div class="g-card">
+                    </div>
+                </section>
+
+                <dialog id="searchBook" class="modal">
+                    <div class="modal__content">
+                        <div class="modal__header">
+                            <form action="#" class="search">
+                                <label for="id_searchBook" class="search__label">
+                                    <i class="bi bi-search"></i>
+                                </label>
+                                <input type="text" name="id_searchBook" id="id_searchBook" class="search__input" placeholder="Search..." />
+                            </form>
+                        </div>
+                        <div class="modal__body">
+                            <div class="searches" style="text-align: center;">
+                                <span class="searches__text">No recent searches</span>
+                            </div>
+                        </div>
+                        <div class="modal__footer">
+                            <ul class="d-flex align-items gap" style="font-size: 1rem;">
+                                <li>
+                                    <i class="bi bi-arrow-return-left"></i>
+                                    <span>to select</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-arrow-up"></i>
+                                    <i class="bi bi-arrow-down"></i>
+                                    <span>to navigate</span>
+                                </li>
+                                <li>
+                                    ESC to close
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </dialog>
+
+                <dialog id="addBook" class="modal">
+                    <div class="modal__content">
+                        <div class="modal__header">
+                            <h5 class="modal__title">Add new book</h5>
+                            <button type="button" data-jsx-dismiss="modal">
+                                <i class="bi bi-x-lg"></i>
+                            </button>
+                        </div>
+                        <div class="modal__bdoy">
+                            <form action="#" class="form">
+                                <div>
+                                    <label for="id_title" class="form__label"></label>
+                                    <input type="text" name="id_title" id="id_title" class="form__input" placeholder="Title" data-jsx-input-for="title" autofocus />
+                                </div>
+                                <div>
+                                    <label for="id_author" class="form__label"></label>
+                                    <input type="text" name="id_author" id="id_author" class="form__input" placeholder="Author" data-jsx-input-for="author" />
+                                </div>
+                                <div>
+                                    <label for="id_pages" class="form__label"></label>
+                                    <input type="text" name="id_pages" id="id_pages" class="form__input" placeholder="Pages" data-jsx-input-for="page" />
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal__footer">
+                            <button type="button" class="btn btn--addBook">Add book</button>
+                        </div>
+                    </div>
+                </dialog>
+
+                <dialog id="updateBook" class="modal">
+                    <div class="modal__content">
+                        <div class="modal__header">
+                            <h5 class="modal__title">Update new book</h5>
+                            <button type="button" data-jsx-dismiss="modal">
+                                <i class="bi bi-x-lg"></i>
+                            </button>
+                        </div>
+                        <div class="modal__bdoy">
+                            <form action="#" class="form">
+                                <div>
+                                    <label for="id_title" class="form__label"></label>
+                                    <input type="text" name="id_title" id="id_title" class="form__input" placeholder="Title" data-jsx-input-for="title" autofocus />
+                                </div>
+                                <div>
+                                    <label for="id_author" class="form__label"></label>
+                                    <input type="text" name="id_author" id="id_author" class="form__input" placeholder="Author" data-jsx-input-for="author" />
+                                </div>
+                                <div>
+                                    <label for="id_pages" class="form__label"></label>
+                                    <input type="text" name="id_pages" id="id_pages" class="form__input" placeholder="Pages" data-jsx-input-for="page" />
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal__footer">
+                            <button type="button" class="btn" data-jsx-update="">Update book</button>
+                        </div>
+                    </div>
+                </dialog>
+
+            </main>
+    
+            <footer class="footer">
+                <div class="copyright">
+                    &copy;
+                    2023 Copyright
+                    <a href="#!">JcSilverX</a>
+                </div>
+            </footer>
+        </div>
+
+    </body>
+</html>
