@@ -204,6 +204,27 @@ button[type="button"] {
 
 }
 
+
+.status-btn {
+    display: inline-block;
+    padding: .4rem 1.2rem;
+    background: rgba(0, 0, 0, .5);
+    color: rgba(255, 255, 255, .75);
+    border-radius: .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background .4s, color .4s;
+}
+
+.status-btn:hover {
+    background: rgba(0, 0, 0, .75);
+    color: rgba(255, 255, 255, 1)
+}
+
+.status-btn[data-jsx-status]::after {
+    content: attr(data-jsx-status);
+}
+
 /* ----- components ----- */
 .g-card {
     margin: 0 auto;
