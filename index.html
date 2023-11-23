@@ -91,8 +91,12 @@
                         <div class="modal__bdoy">
                             <form action="#" class="form">
                                 <div>
+                                    <label for="id_cover" class="form__label"></label>
+                                    <input type="url" name="id_cover" id="id_cover" class="form__input" placeholder="https://<cover-img-link>" data-jsx-input-for="cover" autofocus />
+                                </div>
+                                <div>
                                     <label for="id_title" class="form__label"></label>
-                                    <input type="text" name="id_title" id="id_title" class="form__input" placeholder="Title" data-jsx-input-for="title" autofocus />
+                                    <input type="text" name="id_title" id="id_title" class="form__input" placeholder="Title" data-jsx-input-for="title" />
                                 </div>
                                 <div>
                                     <label for="id_author" class="form__label"></label>
@@ -101,6 +105,10 @@
                                 <div>
                                     <label for="id_pages" class="form__label"></label>
                                     <input type="text" name="id_pages" id="id_pages" class="form__input" placeholder="Pages" data-jsx-input-for="page" />
+                                </div>
+                                <div>
+                                    <label for="id_read" class="">Have you read it?</label>
+                                    <input type="checkbox" name="id_read" id="id_read" class="" data-jsx-input-for="is_read" />
                                 </div>
                             </form>
                         </div>
