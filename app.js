@@ -27,7 +27,7 @@ class Library {
                     <div class="card__body">
                         <h5 class="card__title">${this._book.title}</h5>
                         <p class="card__text">${this._book.author}</p>
-                        <p class="card__text">${this._book.page}</p>
+                        <p class="card__text">${this._book.page} pages</p>
                         
                         <span class="d-flex gap flex-direction" style="--gap-sz: .5rem; --flex-direction: row;">
                             <button type="button" data-jsx-delete="">
